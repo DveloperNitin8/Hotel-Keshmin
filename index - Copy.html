@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Keshmin - Comfortable Stays in Bargarh</title>
+    <meta name="description"
+        content="Hotel Keshmin offers comfortable stays with warm hospitality in the heart of Bargarh with modern amenities, free WiFi, and convenient location.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-text">Hotel <span class="logo-accent">Keshmin</span></span>
+            </a>
+            <div class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="rooms.html">Rooms</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="booking.html" class="btn btn-primary nav-btn">Book Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-content container">
+            <div class="hero-text">
+                <div class="rating-badge">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <span>4.6 Rating (184+ Happy Guests)</span>
+                </div>
+                <h1>Experience Comfortable Stays in Bargarh</h1>
+                <p>Stay at Hotel Keshmin and enjoy modern rooms, great hospitality, and a convenient location near
+                    Panichhatra Overbridge.</p>
+                <div class="hero-btns">
+                    <a href="booking.html" class="btn btn-primary">Book Now</a>
+                    <a href="#quick-booking" class="btn btn-outline">Check Availability</a>
+                    <a href="tel:07653996996" class="btn btn-outline call-btn"><i class="fa-solid fa-phone"></i> Call
+                        Hotel</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Quick Booking System -->
+    <section class="quick-booking-section" id="quick-booking">
+        <div class="container">
+            <div class="booking-wrapper">
+                <form class="booking-form" id="quickBookingForm">
+                    <div class="form-group">
+                        <label for="checkIn">Check-in</label>
+                        <input type="date" id="checkIn" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="checkOut">Check-out</label>
+                        <input type="date" id="checkOut" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="guests">Guests</label>
+                        <select id="guests" required>
+                            <option value="1">1 Guest</option>
+                            <option value="2" selected>2 Guests</option>
+                            <option value="3">3 Guests</option>
+                            <option value="4">4 Guests</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="roomType">Room Type</label>
+                        <select id="roomType" required>
+                            <option value="standard">Standard Room</option>
+                            <option value="deluxe" selected>Deluxe Room</option>
+                            <option value="family">Family Room</option>
+                        </select>
+                    </div>
+                    <div class="form-group booking-btn-wrapper">
+                        <button type="submit" class="btn btn-primary btn-block">Check Availability</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container about-container">
+            <div class="about-content">
+                <div class="section-title" style="text-align: left;">
+                    <h2>Welcome to Hotel Keshmin</h2>
+                </div>
+                <p>Hotel Keshmin offers a relaxing and comfortable stay for travelers visiting Bargarh. Located near
+                    Panichhatra Overbridge, the hotel provides convenient access to the city while offering peaceful
+                    accommodation.</p>
+                <p>Guests enjoy modern amenities, well-maintained rooms, and friendly hospitality that makes every stay
+                    memorable. Whether you're here for business, a family vacation, or just passing through, we ensure
+                    your stay is flawless.</p>
+                <div class="about-features">
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="fa-solid fa-bed"></i></div>
+                        <div>
+                            <h4>Comfortable Rooms</h4>
+                            <p>Clean and well-furnished for your relaxation</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+                        <div>
+                            <h4>Prime Location</h4>
+                            <p>Easy access to city center and transit</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="about.html" class="btn btn-primary" style="margin-top: 20px;">Read More</a>
+            </div>
+            <div class="about-image">
+                <img src="images/hotel/lobby.png" alt="Hotel Keshmin Lobby" class="img-fluid rounded shadow">
+                <div class="experience-badge">
+                    <span class="experience-years">10+</span>
+                    <span class="experience-text">Years of<br>Hospitality</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rooms Section -->
+    <section class="rooms-section bg-light" id="rooms">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Elegant Rooms</h2>
+                <p>Choose from our selection of comfortable accommodations designed for your perfect stay.</p>
+            </div>
+
+            <div class="rooms-grid">
+                <!-- Standard Room -->
+                <div class="room-card">
+                    <div class="room-img-wrapper">
+                        <img src="images/rooms/standard.png" alt="Standard Room">
+                        <div class="room-price">₹1,500 <span>/ night</span></div>
+                    </div>
+                    <div class="room-content">
+                        <h3>Standard Room</h3>
+                        <p>Comfortable and budget-friendly room perfect for solo travelers or short stays.</p>
+                        <div class="room-amenities">
+                            <span><i class="fa-solid fa-wifi"></i> WiFi</span>
+                            <span><i class="fa-solid fa-snowflake"></i> AC</span>
+                            <span><i class="fa-solid fa-tv"></i> TV</span>
+                            <span><i class="fa-solid fa-bell-concierge"></i> Room Service</span>
+                        </div>
+                        <a href="booking.html?room=standard" class="btn btn-outline btn-block"
+                            style="color: var(--primary-color); border-color: var(--primary-color);">Book This Room</a>
+                    </div>
+                </div>
+
+                <!-- Deluxe Room -->
+                <div class="room-card featured">
+                    <div class="featured-badge">Most Popular</div>
+                    <div class="room-img-wrapper">
+                        <img src="images/rooms/deluxe.png" alt="Deluxe Room">
+                        <div class="room-price">₹2,500 <span>/ night</span></div>
+                    </div>
+                    <div class="room-content">
+                        <h3>Deluxe Room</h3>
+                        <p>Spacious, modern room with premium bedding and elevated amenities for a relaxing stay.</p>
+                        <div class="room-amenities">
+                            <span><i class="fa-solid fa-wifi"></i> WiFi</span>
+                            <span><i class="fa-solid fa-snowflake"></i> AC</span>
+                            <span><i class="fa-solid fa-tv"></i> Smart TV</span>
+                            <span><i class="fa-solid fa-mug-hot"></i> Coffee/Tea</span>
+                        </div>
+                        <a href="booking.html?room=deluxe" class="btn btn-primary btn-block">Book This Room</a>
+                    </div>
+                </div>
+
+                <!-- Family Room -->
+                <div class="room-card">
+                    <div class="room-img-wrapper">
+                        <img src="images/rooms/family.png" alt="Family Room">
+                        <div class="room-price">₹3,500 <span>/ night</span></div>
+                    </div>
+                    <div class="room-content">
+                        <h3>Family Room</h3>
+                        <p>Extra large room with additional beds, perfect for families or groups traveling together.</p>
+                        <div class="room-amenities">
+                            <span><i class="fa-solid fa-wifi"></i> WiFi</span>
+                            <span><i class="fa-solid fa-snowflake"></i> AC</span>
+                            <span><i class="fa-solid fa-bed"></i> 2 Beds</span>
+                            <span><i class="fa-solid fa-door-closed"></i> Spacious</span>
+                        </div>
+                        <a href="booking.html?room=family" class="btn btn-outline btn-block"
+                            style="color: var(--primary-color); border-color: var(--primary-color);">Book This Room</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center" style="margin-top: 40px;">
+                <a href="rooms.html" class="btn btn-primary">View All Rooms</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Amenities Section -->
+    <section class="amenities-section" id="amenities">
+        <div class="container">
+            <div class="section-title">
+                <h2>Hotel Amenities</h2>
+                <p>Everything you need for a comfortable and enjoyable stay.</p>
+            </div>
+
+            <div class="amenities-grid">
+                <div class="amenity-card">
+                    <i class="fa-solid fa-wifi amenity-icon"></i>
+                    <h4>Free Wi-Fi</h4>
+                    <p>High-speed internet access throughout the hotel</p>
+                </div>
+                <div class="amenity-card">
+                    <i class="fa-solid fa-mug-saucer amenity-icon"></i>
+                    <h4>Free Breakfast</h4>
+                    <p>Start your day with our delicious complimentary breakfast</p>
+                </div>
+                <div class="amenity-card">
+                    <i class="fa-solid fa-car amenity-icon"></i>
+                    <h4>Free Parking</h4>
+                    <p>Secure on-site parking available for all guests</p>
+                </div>
+                <div class="amenity-card">
+                    <i class="fa-solid fa-water-ladder amenity-icon"></i>
+                    <h4>Swimming Pool</h4>
+                    <p>Relax and unwind in our pristine swimming pool</p>
+                </div>
+                <div class="amenity-card">
+                    <i class="fa-solid fa-shirt amenity-icon"></i>
+                    <h4>Laundry Service</h4>
+                    <p>Same-day professional laundry and dry cleaning</p>
+                </div>
+                <div class="amenity-card">
+                    <i class="fa-solid fa-bell-concierge amenity-icon"></i>
+                    <h4>Room Service</h4>
+                    <p>24/7 in-room dining available for your convenience</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us bg-light">
+        <div class="container">
+            <div class="why-choose-content">
+                <div class="why-choose-text">
+                    <div class="section-title" style="text-align: left;">
+                        <h2>Why Choose Hotel Keshmin?</h2>
+                    </div>
+                    <ul class="benefits-list">
+                        <li><i class="fa-solid fa-star"></i> <strong>Highly Rated</strong> - 4.6 Star Hotel based on
+                            guest reviews</li>
+                        <li><i class="fa-solid fa-location-dot"></i> <strong>Prime Location</strong> - Conveniently
+                            located in Bargarh</li>
+                        <li><i class="fa-solid fa-bed"></i> <strong>Clean & Comfortable</strong> - Impeccably maintained
+                            rooms</li>
+                        <li><i class="fa-solid fa-wifi"></i> <strong>Fast Connectivity</strong> - Free High-Speed WiFi
+                            everywhere</li>
+                        <li><i class="fa-solid fa-shield-halved"></i> <strong>Safe & Secure</strong> - 24/7 security and
+                            safe parking</li>
+                        <li><i class="fa-solid fa-handshake-angle"></i> <strong>Friendly Hospitality</strong> - Our
+                            staff is dedicated to your comfort</li>
+                    </ul>
+                    <a href="booking.html" class="btn btn-primary" style="margin-top: 20px;">Book Your Stay</a>
+                </div>
+                <div class="why-choose-img">
+                    <img src="images/hotel/lobby.png" alt="Why Choose Us" class="img-fluid rounded shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guest Reviews Section -->
+    <section class="reviews-section" id="reviews">
+        <div class="container">
+            <div class="section-title">
+                <h2>What Our Guests Say</h2>
+                <p>Real experiences from travelers who stayed at Hotel Keshmin.</p>
+            </div>
+
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="review-text">"Very comfortable stay with great service. The rooms were clean, and the
+                        staff was extremely accommodating. Will definitely stay here again!"</p>
+                    <div class="reviewer-info">
+                        <div class="reviewer-avatar">S</div>
+                        <div class="reviewer-details">
+                            <h4>Sumit Dash</h4>
+                            <span>Business Traveler</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <p class="review-text">"Clean rooms and good hospitality. The location near Panichhatra Overbridge
+                        made it really easy to travel around the city. Highly recommended."</p>
+                    <div class="reviewer-info">
+                        <div class="reviewer-avatar">A</div>
+                        <div class="reviewer-details">
+                            <h4>Aditi Sharma</h4>
+                            <span>Family Vacation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="review-text">"The best hotel in Bargarh! The complimentary breakfast was amazing and the
+                        WiFi was super fast. A truly premium experience at an affordable price."</p>
+                    <div class="reviewer-info">
+                        <div class="reviewer-avatar">R</div>
+                        <div class="reviewer-details">
+                            <h4>Rakesh Kumar</h4>
+                            <span>Tourist</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery Section -->
+    <section class="gallery-section bg-light" id="gallery">
+        <div class="container">
+            <div class="section-title">
+                <h2>Hotel Gallery</h2>
+                <p>Take a glimpse into the luxurious experience awaiting you.</p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/hotel/hero.png" alt="Hotel Exterior">
+                    <div class="gallery-overlay">
+                        <span><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/rooms/deluxe.png" alt="Deluxe Room">
+                    <div class="gallery-overlay">
+                        <span><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/hotel/lobby.png" alt="Hotel Lobby">
+                    <div class="gallery-overlay">
+                        <span><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/hotel/dining.png" alt="Dining Area">
+                    <div class="gallery-overlay">
+                        <span><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/rooms/family.png" alt="Family Room">
+                    <div class="gallery-overlay">
+                        <span><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/rooms/standard.png" alt="Standard Room">
+                    <div class="gallery-overlay">
+                        <span><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center" style="margin-top: 40px;">
+                <a href="gallery.html" class="btn btn-primary">View Full Gallery</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div id="lightbox-caption"></div>
+    </div>
+
+    <!-- Location Section -->
+    <section class="location-section" id="location">
+        <div class="container">
+            <div class="location-wrapper">
+                <div class="location-info">
+                    <div class="section-title" style="text-align: left; margin-bottom: 30px;">
+                        <h2>Our Location</h2>
+                    </div>
+                    <ul class="contact-details">
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <strong>Address</strong><br>
+                                Rudra Plaza Road, Near Panichhatra Overbridge,<br>
+                                Jamurda, Bargarh, Odisha 768040
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            <div>
+                                <strong>Phone</strong><br>
+                                <a href="tel:07653996996">076539 96996</a>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <div>
+                                <strong>Email</strong><br>
+                                <a href="mailto:info@hotelkeshmin.com">info@hotelkeshmin.com</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="https://maps.google.com/maps?q=Hotel+Keshmin,+Rudra+Plaza+Road,+Bargarh,+Odisha+768040"
+                        target="_blank" class="btn btn-primary" style="margin-top: 20px;">
+                        <i class="fa-solid fa-map"></i> Get Directions
+                    </a>
+                </div>
+                <div class="location-map">
+                    <!-- Google Maps Embed iframe placeholder styling -->
+                    <div class="map-container">
+                        <iframe
+                            src="https://maps.google.com/maps?q=Hotel+Keshmin,+Rudra+Plaza+Road,+Bargarh,+Odisha+768040&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section bg-light" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Get in Touch</h2>
+                <p>Have questions? Reach out to us and we'll be happy to assist you.</p>
+            </div>
+
+            <div class="contact-wrapper">
+                <div class="contact-form-container">
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" placeholder="Enter your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" placeholder="Enter your phone number" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" rows="5" placeholder="How can we help you?" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <a href="index.html" class="logo">
+                        <span class="logo-text" style="color: var(--white);">Hotel <span
+                                class="logo-accent">Keshmin</span></span>
+                    </a>
+                    <p class="footer-desc">Experience comfortable stays with warm hospitality in the heart of Bargarh.
+                        Your perfect home away from home.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="rooms.html">Our Rooms</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul class="footer-contact">
+                        <li><i class="fa-solid fa-location-dot"></i> Rudra Plaza Road, Near Panichhatra Overbridge,
+                            Bargarh</li>
+                        <li><i class="fa-solid fa-phone"></i> 076539 96996</li>
+                        <li><i class="fa-solid fa-envelope"></i> info@hotelkeshmin.com</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Hotel Keshmin. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Booking Modal -->
+    <div class="modal" id="bookingModal">
+        <div class="modal-content">
+            <span class="close-modal" id="closeModal">&times;</span>
+            <div class="modal-header">
+                <h3>Availability Confirmed</h3>
+            </div>
+            <div class="modal-body">
+                <div class="booking-summary" id="modalSummary">
+                    <!-- JS injects summary here -->
+                </div>
+                <div class="modal-actions">
+                    <a href="booking.html" class="btn btn-primary">Proceed to Booking</a>
+                    <button class="btn btn-outline close-btn" id="cancelModal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/booking.js"></script>
+    <script src="js/gallery.js"></script>
+</body>
+
+</html>

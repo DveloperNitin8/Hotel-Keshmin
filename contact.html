@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Hotel Keshmin</title>
+    <meta name="description" content="Contact Hotel Keshmin in Bargarh for inquiries or feedback.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <style>
+        .page-header {
+            padding: 120px 0 60px;
+            background-color: var(--primary-color);
+            color: var(--white);
+            text-align: center;
+        }
+        .page-header h1 {
+            color: var(--white);
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-text">Hotel <span class="logo-accent">Keshmin</span></span>
+            </a>
+            <div class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="rooms.html">Rooms</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="booking.html" class="btn btn-primary nav-btn">Book Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>We're here to help with any questions you may have.</p>
+        </div>
+    </div>
+
+    <!-- Contact & Map Section -->
+    <section class="location-section bg-light" style="padding-top: 80px;">
+        <div class="container">
+            <div class="location-wrapper" style="box-shadow: none; background: transparent;">
+                <div class="location-info" style="background: var(--white); box-shadow: var(--shadow-medium); border-radius: var(--radius-md);">
+                    <div class="section-title" style="text-align: left; margin-bottom: 30px;">
+                        <h2>Our Contact Details</h2>
+                    </div>
+                    <ul class="contact-details">
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <strong>Address</strong><br>
+                                Rudra Plaza Road, Near Panichhatra Overbridge,<br>
+                                Jamurda, Bargarh, Odisha 768040
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            <div>
+                                <strong>Phone</strong><br>
+                                <a href="tel:07653996996">076539 96996</a>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <div>
+                                <strong>Email</strong><br>
+                                <a href="mailto:info@hotelkeshmin.com">info@hotelkeshmin.com</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="contact-form-container" style="background: var(--white); box-shadow: var(--shadow-medium); border-radius: var(--radius-md); padding: 50px;">
+                    <div class="section-title" style="text-align: left; margin-bottom: 30px;">
+                        <h2>Send Us a Message</h2>
+                    </div>
+                    <form id="contactPageForm" class="contact-form" onsubmit="event.preventDefault(); alert('Message sent successfully!'); this.reset();">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" placeholder="Enter your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" placeholder="Enter your phone number" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" rows="5" placeholder="How can we help you?" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="location-map" style="margin-top: 50px; border-radius: var(--radius-md); overflow: hidden; box-shadow: var(--shadow-medium);">
+                <iframe 
+                    src="https://maps.google.com/maps?q=Hotel+Keshmin,+Rudra+Plaza+Road,+Bargarh,+Odisha+768040&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+                    width="100%" 
+                    height="100%" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <a href="index.html" class="logo">
+                        <span class="logo-text" style="color: var(--white);">Hotel <span class="logo-accent">Keshmin</span></span>
+                    </a>
+                    <p class="footer-desc">Experience comfortable stays with warm hospitality in the heart of Bargarh. Your perfect home away from home.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="rooms.html">Our Rooms</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul class="footer-contact">
+                        <li><i class="fa-solid fa-location-dot"></i> Rudra Plaza Road, Near Panichhatra Overbridge, Bargarh</li>
+                        <li><i class="fa-solid fa-phone"></i> 076539 96996</li>
+                        <li><i class="fa-solid fa-envelope"></i> info@hotelkeshmin.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Hotel Keshmin. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

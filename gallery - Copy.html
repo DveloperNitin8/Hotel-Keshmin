@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery - Hotel Keshmin</title>
+    <meta name="description" content="View the premium rooms, dining, and exterior of Hotel Keshmin.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <style>
+        .page-header {
+            padding: 120px 0 60px;
+            background-color: var(--primary-color);
+            color: var(--white);
+            text-align: center;
+        }
+        .page-header h1 {
+            color: var(--white);
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-text">Hotel <span class="logo-accent">Keshmin</span></span>
+            </a>
+            <div class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="rooms.html">Rooms</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="booking.html" class="btn btn-primary nav-btn">Book Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <div class="container">
+            <h1>Photo Gallery</h1>
+            <p>Take a visual tour of our luxurious accommodations and amenities.</p>
+        </div>
+    </div>
+
+    <!-- Photo Gallery Section -->
+    <section class="gallery-section">
+        <div class="container">
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/hotel/hero.png" alt="Hotel Exterior">
+                    <div class="gallery-overlay">
+                        <span><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/hotel/lobby.png" alt="Main Lobby">
+                    <div class="gallery-overlay">
+                        <span><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/hotel/dining.png" alt="Fine Dining Restaurant">
+                    <div class="gallery-overlay">
+                        <span><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/rooms/deluxe.png" alt="Deluxe Room">
+                    <div class="gallery-overlay">
+                        <span><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/rooms/family.png" alt="Family Room">
+                    <div class="gallery-overlay">
+                        <span><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/rooms/standard.png" alt="Standard Room">
+                    <div class="gallery-overlay">
+                        <span><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div id="lightbox-caption"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <a href="index.html" class="logo">
+                        <span class="logo-text" style="color: var(--white);">Hotel <span class="logo-accent">Keshmin</span></span>
+                    </a>
+                    <p class="footer-desc">Experience comfortable stays with warm hospitality in the heart of Bargarh. Your perfect home away from home.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="rooms.html">Our Rooms</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul class="footer-contact">
+                        <li><i class="fa-solid fa-location-dot"></i> Rudra Plaza Road, Near Panichhatra Overbridge, Bargarh</li>
+                        <li><i class="fa-solid fa-phone"></i> 076539 96996</li>
+                        <li><i class="fa-solid fa-envelope"></i> info@hotelkeshmin.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Hotel Keshmin. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/gallery.js"></script>
+</body>
+</html>
